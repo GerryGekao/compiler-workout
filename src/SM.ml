@@ -252,4 +252,4 @@ let compile (defs, p) =
   in
   let lend, env = env#get_label in
   let _, flag, code = compile_stmt lend env p in
-  (if flag then code @ [LABEL lend] else code) @ [END] @ (List.concat def_code) 
+  (if flag then code @ [LABEL lend] else code) @ [END] @ (List.concat def_code)
